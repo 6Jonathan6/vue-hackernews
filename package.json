@@ -82,14 +82,6 @@
     },
     "setupFiles": [
       "./test-setup.js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "vue"
-    ],
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/"
     ]
   }
 }
