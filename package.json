@@ -11,9 +11,9 @@
     "lint": "vue-cli-service lint e2e server.js server.spec.js",
     "test": "npm run lint && npm run test:unit && npm run test:integration",
     "test:e2e": "NODE_ENV=test node e2e/runner.js",
-    "test:integration": "npm run build && cross-env VUE_CLI_BABEL_TRANSPILE_MODULES=true VUE_CLI_BABEL_TARGET_NODE=true NODE_ENV=test jest --testEnvironment node --forceExit server.spec.js",
-    "test:unit": "cross-env VUE_CLI_BABEL_TRANSPILE_MODULES=true VUE_CLI_BABEL_TARGET_NODE=true jest src --no-cache",
-    "test:unit:debug": "cross-env VUE_CLI_BABEL_TRANSPILE_MODULES=true VUE_CLI_BABEL_TARGET_NODE=true node --inspect-brk jest src"
+    "test:integration": "npm run build && NODE_ENV=test jest --testEnvironment node --forceExit server.spec.js",
+    "test:unit": "jest src --no-cache",
+    "test:unit:debug": "node --inspect-brk jest src"
   },
   "dependencies": {
     "firebase": "^5.0.4",
